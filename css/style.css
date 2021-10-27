@@ -331,6 +331,20 @@ header.header{
   }
 }
 
+@media screen and (max-width:460px){
+  .sm-img img{
+    height: 12rem;
+    width: 13rem;
+  }
+  .sm-img::before{
+    height: 13rem;
+    width: 13rem;
+  }
+
+  .color-bar{
+    top: 5%;
+  }
+}
 
 .home-img img{
   object-fit: cover;
