@@ -1,23 +1,47 @@
-const blueSwitch = document.querySelector('.blue-switch');
-const yellowSwitch = document.querySelector('.yellow-switch');
-const header = document.querySelector('header');
+const blueSwitch = document.querySelector(".blue-switch");
+const yellowSwitch = document.querySelector(".yellow-switch");
+const pinkSwitch = document.querySelector(".pink-switch");
+const header = document.querySelector("header");
 
-blueSwitch.onclick = () =>{
-    header.classList.replace('yellow', 'blue');
-    blueSwitch.classList.add('active');
-    yellowSwitch.classList.remove('active');
-}
+blueSwitch.onclick = () => {
+  if (header.classList.contains("yellow")) {
+    header.classList.replace("yellow", "blue");
+  }
+  if (header.classList.contains("pink")) {
+    header.classList.replace("pink", "blue");
+  }
+  blueSwitch.classList.add("active");
+  pinkSwitch.classList.remove("active");
+  yellowSwitch.classList.remove("active");
+};
 
-yellowSwitch.onclick = () =>{
-    header.classList.replace('blue', 'yellow')
-    blueSwitch.classList.remove('active');
-    yellowSwitch.classList.add('active');
-}
+yellowSwitch.onclick = () => {
+  if (header.classList.contains("blue")) {
+    header.classList.replace("blue", "yellow");
+  }
+  if (header.classList.contains("pink")) {
+    header.classList.replace("pink", "yellow");
+  }
+  blueSwitch.classList.remove("active");
+  pinkSwitch.classList.remove("active");
+  yellowSwitch.classList.add("active");
+};
 
-document.querySelector('.contact-btn').onclick = (e)  =>{
-    e.preventDefault()
-}
+pinkSwitch.onclick = () => {
+  if (header.classList.contains("blue")) {
+    header.classList.replace("blue", "pink");
+  }
+  if (header.classList.contains("yellow")) {
+    header.classList.replace("yellow", "pink");
+  }
+  blueSwitch.classList.remove("active");
+  pinkSwitch.classList.add("active");
+  yellowSwitch.classList.remove("active");
+};
 
+document.querySelector(".contact-btn").onclick = (e) => {
+  e.preventDefault();
+};
 
 // blueSwitch.addEventListener('click', function(){
 //     header.classList.add('blue');

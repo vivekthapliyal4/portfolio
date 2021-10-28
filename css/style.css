@@ -42,12 +42,17 @@
     --blue-primary-3: hsl(185, 81%, 29%);
     --blue-primary-4: hsl(184, 77%, 34%);
     --blue-primary-5: #2caeba;
-    /* lighter shades of primary color */
+    /* lighter shades of blue color */
     --blue-primary-6: hsl(185, 57%, 50%);
     --blue-primary-7: hsl(184, 65%, 59%);
     --blue-primary-8: hsl(184, 80%, 74%);
     --blue-primary-9: hsl(185, 94%, 87%);
-    --blue-primary-10: hsl(186, 100%, 94%);     
+    --blue-primary-10: hsl(186, 100%, 94%);    
+     /*pink primary  */
+     --pink-dark-bg: #1d1d1d;
+     --pink-primary-1: #e23753;
+     --pink-primary-7: #e85f75;
+     --pink-primary-10: #fcebee;
   }
 
 .blue{
@@ -66,6 +71,16 @@
   --btn: var(--clr-primary-5);
   --btn-hover: var(--clr-primary-7);
   --home-img: var(--clr-primary-5);
+}
+
+.pink{
+  --bg: var(--pink-primary-10);
+  --underline: var(--pink-primary-1);
+  --socials:var(--pink-primary-1);
+  --btn: var(--pink-primary-1);
+  --btn-hover:var(--pink-primary-7);
+  --home-img: var(--pink-primary-1);
+
 }
 
 *,
@@ -202,13 +217,14 @@ header.header{
   top: 8%;
   right: 15%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
 }
 
 .colors{
   position: relative;
   height: 1.2rem;
   width: 1.2rem;
+  margin-right: .25rem;
   border-radius: 50%;
   z-index: 999;
   border: none;
@@ -222,10 +238,6 @@ header.header{
   color: var(--clr-grey-6);
 }
 
-.blue-switch{
-  background: var(--blue-primary-5);
-}
-
 .active::before{
   content: ' ';
   position: absolute;
@@ -237,11 +249,19 @@ header.header{
   height: 1.5rem;
   display: inline-block;
   vertical-align: middle;
+  
+}
 
+.blue-switch{
+  background: var(--blue-primary-5);
 }
 
 .yellow-switch{
   background: var(--clr-primary-5);
+}
+
+.pink-switch{
+  background: var(--pink-primary-1);
 }
 
 .underline {
