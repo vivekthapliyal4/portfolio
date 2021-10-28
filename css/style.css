@@ -212,8 +212,7 @@ header.header{
 
 .color-bar{
   position: absolute;
-  width: 7rem;
-  height: 2rem;
+  width: 30%;
   top: 8%;
   right: 15%;
   display: grid;
