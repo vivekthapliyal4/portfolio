@@ -223,11 +223,14 @@ header.header{
   position: relative;
   height: 1.2rem;
   width: 1.2rem;
-  margin-right: .25rem;
   border-radius: 50%;
   z-index: 999;
   border: none;
   cursor: pointer;
+}
+
+.colors:not(:last-child){
+  margin-right: 0.25rem;
 }
 
 .theme{
