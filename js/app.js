@@ -2,6 +2,11 @@ const blueSwitch = document.querySelector(".blue-switch");
 const yellowSwitch = document.querySelector(".yellow-switch");
 const pinkSwitch = document.querySelector(".pink-switch");
 const header = document.querySelector("header");
+const darkMode = document.getElementById('dark');
+
+darkMode.onchange = () => {
+  header.classList.toggle('dark')
+}
 
 blueSwitch.onclick = () => {
   if (header.classList.contains("yellow")) {

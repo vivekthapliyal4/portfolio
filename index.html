@@ -17,12 +17,24 @@
   </head>
   <body>
       <header class="header blue">
-        <div class="color-bar">
-          <h4 class="theme">Theme: </h4>
-          <div class="colors blue-switch active"></div>
-          <div class="colors yellow-switch"></div>
-          <div class="colors pink-switch"></div>
-        </div>
+        <nav class="navbar">
+          <div class="dark-mode">
+            <input id="dark" type="checkbox" name="dark" title="dark">
+            <label for="dark" class="label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+          <div class="colors">
+            <h4 class="theme">Theme: </h4>
+            <ul>
+              <li class="color blue-switch active"></li>
+              <li class="color yellow-switch"></li>
+              <li class="color pink-switch"></li>
+            </ul>
+          </div>
+        </nav>
           <div class="section-center">
             <article class="sm-img">
               <img src="./img/kid.png" alt="">
@@ -35,27 +47,27 @@
                   <!-- social icons -->
                   <ul class="social-icons">
                       <li>
-                          <a href="https://www.facebook.com/viveks.thapliyal" class="social-icon">
+                          <a title="facebook" href="https://www.facebook.com/viveks.thapliyal" class="social-icon">
                             <i class="fab fa-facebook"></i>
                         </a>
                       </li>
                       <li>
-                          <a href="https://in.linkedin.com/in/vivek-thapliyal-603175207" class="social-icon">
+                          <a title="linkedin" href="https://in.linkedin.com/in/vivek-thapliyal-603175207" class="social-icon">
                             <i class="fab fa-linkedin"></i>
                         </a>
                       </li>
                       <li>
-                          <a href="https://www.twitter.com/vivekthapliyal_" class="social-icon">
+                          <a title="twitter" href="https://www.twitter.com/vivekthapliyal_" class="social-icon">
                             <i class="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                          <a href="https://www.instagram.com/vivekthapliyal_" class="social-icon">
+                          <a title="instagram" href="https://www.instagram.com/vivekthapliyal_" class="social-icon">
                             <i class="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                          <a href="https://www.github.com/vivekthapliyal4" class="social-icon">
+                          <a title="github" href="https://www.github.com/vivekthapliyal4" class="social-icon">
                             <i class="fab fa-github"></i>
                         </a>
                       </li>
