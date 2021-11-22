@@ -49,12 +49,12 @@
     --blue-primary-9: hsl(185, 94%, 87%);
     --blue-primary-10: hsl(186, 100%, 94%);    
      /*pink primary  */
-     --pink-primary-1: #e23753;
+     --pink-primary-1: #F26B4E;
      --pink-primary-7: #e85f75;
      --pink-primary-10: #fcebee;
 
      /* dark mode */
-     --dark-bg: #1d1d1d;
+     --dark-bg: #000000;
      --dark-font: #fff;
      
   }
@@ -398,15 +398,30 @@ header.header{
   position: relative;
   display: block;
 }
+.home-img img{
+  background: #fff;
+}
+
+.home-img::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(242, 107, 78, .1);
+  border-radius: var(--radius);
+
+}
 .home-img::before{
   content: '';
   position: absolute;
-  top: 1.5rem;
-  right: -2rem;
+  top: 1rem;
+  right: -1rem;
   width: 100%;
   height: 100%;
-  border: 0.25rem solid var(--home-img);
-  border-radius: var(--radius);
+  border: 0.15rem solid var(--home-img);
+  
 }
 
 @media screen and (max-width:992px){
