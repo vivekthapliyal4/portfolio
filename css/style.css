@@ -409,6 +409,7 @@ header.header{
   left: 0;
   height: 100%;
   width: 100%;
+  transition: .3s;
   background: rgba(242, 107, 78, .1);
   border-radius: var(--radius);
 
@@ -416,12 +417,21 @@ header.header{
 .home-img::before{
   content: '';
   position: absolute;
-  top: 1rem;
-  right: -1rem;
+  top: 2rem;
+  right: -2rem;
   width: 100%;
   height: 100%;
+  transition: .3s;
   border: 0.15rem solid var(--home-img);
   
+}
+
+.home-img:hover::before{
+  top: 1rem;
+  right: -1rem;
+}
+.home-img:hover::after{
+  background: transparent;
 }
 
 @media screen and (max-width:992px){
